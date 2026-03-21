@@ -32,3 +32,26 @@ Para ingressar nos servidores competitivos, o sistema requer autorização para 
 ---
 
 ### 🔍 ANÁLISE COMPORTAMENTAL EM TEMPO REAL (IN-GAME)
+
+Durante a partida, o módulo **Sentinel** executará as seguintes análises em background:
+
+| Vetor de Análise | Descrição Técnica | Limiar de Alerta |
+| :--- | :--- | :--- |
+| **Mouse Delta Smooth** | Verifica se a movimentação da mira possui suavização artificial (Aimbot). | `CRÍTICO` |
+| **Occlusion Checks** | Analisa se o jogador fixa a mira em entidades através de paredes (Wallhack). | `ALTO` |
+| **Frame-Time Consistency** | Detecta flutuações de FPS causadas por overlays de hacks externos. | `MODERADO` |
+| **Packet Integrity** | Monitora a integridade dos pacotes enviados ao servidor (Anti-Lag Compensation). | `CRÍTICO` |
+
+---
+
+> [!CAUTION]
+> **AVISO DE SEGURANÇA:** Tentativas de mascarar o HWID ou utilizar VPNs para contornar o banimento de IP resultarão em blacklist definitiva nos servidores da distribuidora.
+
+---
+
+## 🛠️ Detalhes da Implementação
+
+* **Modelo Utilizado:** Gemini 3 Flash.
+* **Técnica Principal:** *System Role Play* com foco em rigor logico.
+* **Estilização:** Utilização de tabelas para visualização de dados técnicos e blocos de citação para avisos críticos.
+* **Lógica de Prompt:** Árvore de decisão baseada em consentimento (*High-Stakes Decision Making*).
